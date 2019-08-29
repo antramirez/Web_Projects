@@ -1,0 +1,331 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: rgb(208,209,211);
+}
+
+.hidden {
+  display: none !important;
+}
+
+#container {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0px;
+  width: 400px;
+  height: 100vh;
+  margin: auto;
+  background-color: rgb(208,209,211);
+  overflow: hidden;
+}
+
+#container img {
+  width:100%;
+  display: block;
+  margin: auto;
+}
+
+#container #logo {
+  margin: -10px auto;
+  width: 200px;
+}
+
+#container h2, h1 {
+  font-family: sans-serif;
+  color: rgb(228,0,42);
+  margin: 0px auto 10px auto;
+  text-align: center;
+}
+
+#destinations, #modifications {
+  height: 52vh;
+  overflow: scroll;
+}
+
+#selectDestinations {
+  display: none;
+}
+.destination-container, .feature-container {
+  padding-left: 16px;
+  margin: 0px auto;
+  height: 60px;
+  border-bottom: 1px solid black;
+  overflow: hidden;
+  transition: all .8s ease-out;
+}
+
+.dest-full-height {
+  height: 250px;
+  max-height: auto !important;
+}
+
+.feat-full-height {
+  height: 150px;
+  max-height: auto !important;
+}
+
+.destination-name, .feature-name {
+  display: block;
+  font-size: 18px;
+  line-height: 18px;
+  padding: 20px 0px;
+  height: 22px;
+  font-family: sans-serif;
+  position: relative;
+  overflow: auto;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.destination-description, .feature-description {
+  font-family: sans-serif;
+}
+
+.destination-name::-webkit-scrollbar, .feature-name::-webkit-scrollbar {
+  height: 1px;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(255,255,255);
+  border-radius: 25px;
+  border: 1px solid black;
+}
+
+
+.add-button, .remove-button, #getStartedButton {
+  display: block;
+  margin: 15px auto;
+  width: 300px;
+  height: 36px;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 14px;
+  cursor: default;
+  background-color: white;
+  color: rgb(228,0,42);
+}
+
+#getStartedButton:hover {
+  width: 298px !important;
+  height: 34px;
+  border: 1px solid rgb(228,0,42);
+}
+
+#getStartedButton:active, #modifyRouteButton2:active {
+  color: white;
+  background-color: rgb(228,0,42);
+}
+
+#launch {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+#launch #app-description {
+  line-height: 1.4em;
+  margin: 60px auto;
+}
+
+.remove-button {
+  display:none;
+}
+
+.add-button:active, .remove-button:active {
+  width: 298px;
+  height: 34px;
+  border: 1px solid black;
+  color: black;
+}
+
+.button {
+  display: block;
+  margin: 15px auto;
+  width: 300px !important;
+  height: 36px;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 25px;
+  text-align: center;
+  padding-top: 14px;
+  cursor: default;
+}
+
+div.button:hover {
+  width:79%;
+  border: 1px solid white;
+  background-color: white;
+  color: rgb(228,0,42);
+  padding-top: 14px;
+}
+
+#makeRoute {
+  position: relative;
+  top: 20%;
+}
+
+#makeRouteButton2:hover {
+  background-color: white;
+  color: rgb(228,0,42);
+}
+
+#makeRoute:active, #makeRoute2:active {
+  color: rgb(228,0,42);
+  background-color: white;
+}
+
+#makeRoute, #modifyRouteButton2 {
+  margin:auto;
+  width: 300px;
+}
+
+#makeRoute, #makeRoute2, #modifyRouteButton2 {
+  font-weight: 700;
+  background-color: rgb(228,0,42);
+  color: white;
+  margin-top: 20px;
+}
+
+#modifyRouteButton2 {
+  margin-top: 20px !important;
+}
+
+#modifyRouteButton2:hover {
+  border: 1px solid white;
+}
+
+#modifyRouteButton2:active {
+  background-color: white;
+  color:  rgb(228,0,42);
+}
+
+#modifyRouteButton, #differentDestinations {
+  font-weight: 400;
+  background-color: rgb(231,231,231);
+  color: black;
+}
+
+#routeOverview {
+  display: none;
+  padding: 0px 15px;
+}
+
+#mapContainer {
+  width:100%;
+}
+
+#mapContainer canvas {
+  margin:0px;
+}
+
+#mapContainer img {
+  display: block;
+  margin: 0 auto;
+}
+
+#mapImg {
+  margin-top: 26px !important;
+  margin-bottom: 20px !important;
+}
+
+#modifyRoute {
+  display: none;
+}
+
+.modify {
+  background-color: rgb(231,231,231);
+  color: black;
+}
+
+#path {
+  display: none;
+  font-family: sans-serif;
+  font-size: 16px;
+  overflow: scroll;
+  height: 180px;
+}
+
+.path-dest {
+  display: block;
+  margin: 12px auto;
+  width: 300px;
+  font-size: 20px;
+  font-family: sans-serif;
+  border-radius: 25px;
+  text-align: center;
+  cursor: default;
+  color: rgb(228,0,42);
+}
+
+@media (max-height: 600px) {
+  #container h2 {
+    margin: -5px auto 5px auto;
+  }
+  #mapImg {
+    margin: 0px auto !important;
+  }
+  #routeOverview .button {
+    margin: 5px auto;
+  }
+  #path {
+    margin-top: 15px;
+    height: 130px;
+  }
+}
+
+@media (max-width: 400px) {
+  #container {
+    width:100%;
+    height: 100vh;
+    border: 0px;
+  }
+  .button {
+    padding-top: 10px;
+  }
+  .destination-container {
+    max-resolution: 4px;
+  }
+  .destination-name, .feature-name {
+    font-size: 16px;
+    width: 88%;
+  }
+  .dest-full-height {
+    height: 250px;
+    max-height: auto !important;
+  }
+  .feat-full-height {
+    height: 150px;
+    max-height: auto !important;
+  }
+  .add-button {
+    padding-top: 11px;
+  }
+  .remove-button {
+    padding-top: 11px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .button {
+    height: 30px !important;
+    width: 280px !important;
+    padding-top: 8px;
+  }
+  .destination-name, .feature-name {
+    width: 85%;
+    top: 0px;
+  }
+  .add-button, .remove-button {
+    width: 70%;
+    padding-top: 12px;
+
+  }
+}

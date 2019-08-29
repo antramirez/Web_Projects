@@ -1,0 +1,24 @@
+[submodule "Applied_Internet_Technology/Higher_Order_Functions"]
+	path = Applied_Internet_Technology/Higher_Order_Functions
+	url = https://github.com/antramirez/Higher-Order-Functions
+[submodule "Applied_Internet_Technology/Web_Framework_Animal_Site"]
+	path = Applied_Internet_Technology/Web_Framework_Animal_Site
+	url = https://github.com/antramirez/Web_Framework_Animal_Site
+[submodule "Applied_Internet_Technology/ASCII_Art_Diary"]
+	path = Applied_Internet_Technology/ASCII_Art_Diary
+	url = https://github.com/antramirez/ASCII_Art_Diary
+[submodule "Applied_Internet_Technology/Sound_Database"]
+	path = Applied_Internet_Technology/Sound_Database
+	url = https://github.com/antramirez/Sound_Database
+[submodule "Applied_Internet_Technology/Link_Aggregator_Site"]
+	path = Applied_Internet_Technology/Link_Aggregator_Site
+	url = https://github.com/antramirez/Link_Aggregator_Site
+[submodule "Applied_Internet_Technology/Forest_Simulator"]
+	path = Applied_Internet_Technology/Forest_Simulator
+	url = https://github.com/antramirez/Forest_Simulator
+[submodule "Applied_Internet_Technology/Keyboard_Smashing_Database"]
+	path = Applied_Internet_Technology/Keyboard_Smashing_Database
+	url = https://github.com/antramirez/Keyboard_Smashing_Database
+[submodule "Applied_Internet_Technology/p5GRAM"]
+	path = Applied_Internet_Technology/p5GRAM
+	url = https://github.com/antramirez/p5GRAM

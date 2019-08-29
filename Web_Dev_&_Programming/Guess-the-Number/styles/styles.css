@@ -1,0 +1,123 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: rgba(40,44,51, 0.4);
+}
+
+#header {
+  background-color: black;
+  color: white;
+  font-size: 200%;
+  height: 60px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.rounded {
+    border-radius: 10px 10px 10px 10px;
+}
+
+#description {
+  width: 40%;
+  margin:auto;
+  padding-top:1px;
+  padding-bottom: 1px;
+  padding-left: 10px;
+  padding-right:10px;
+  background-color: rgba(255,255,255,.5);
+}
+
+#bank {
+  width:40%;
+  margin:auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: rgba(255,255,255,.45);
+  padding-top:1px;
+  padding-bottom: 32px;
+  padding-left: 10px;
+  padding-right:10px;
+
+}
+
+#amount {
+  float:left;
+}
+
+#balance {
+  float:left;
+}
+
+#game {
+  width:40%;
+  margin:auto;
+  background-color: rgba(255,255,255,.45);
+  padding-top:1px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right:10px;
+  margin-bottom:18%;
+}
+
+#left {
+  width:50%;
+}
+
+#roll {
+  position:relative;
+  left:20%;
+}
+
+#die {
+  display:block;
+  margin: auto;
+  margin-bottom:3%;
+}
+
+#buttons {
+  text-align: center;
+}
+
+#even, #odd {
+  display:inline;
+  margin:5px;
+  padding:5px;
+}
+
+#playAgain {
+  display:none;
+  margin:5px;
+  padding:5px;
+  width:100px;
+}
+
+.button {
+  background-color: white;
+  width:50px;
+}
+
+.button:hover {
+  background-color: gray;
+}
+
+#gameover {
+  display:none;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color:white;
+}
+
+#footer {
+  clear: both;
+  background-color: black;
+  height: 50px;
+  color:white;
+  width:100%;
+  text-align:center;
+}

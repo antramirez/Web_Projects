@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style >
+      body {
+        background-color: rgba(0,0,255,.15);
+        font-family: sans-serif;
+      }
+      #container {
+        margin: 50px auto;
+        max-width: 850px;
+        padding: 20px 50px;
+        background-color: white;
+      }
+      img, video {
+        display: block;
+        width: 450px;
+        margin: 10px auto;
+      }
+      #images {
+        justify-content: content;
+        margin: auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Leap Motion VR Documentation</h1>
+      <p>This project was harder to build than we anticipated. After changing our idea a few times, we were sure regardless of what we did, we wanted to use a Leap motion sensor to manipulate some sort of object. We have both worked with mobile VR in the past, so we did not want to do VR again, but we are happy we did because we got to use a new technology to enhance the VR experience.
+      <br>
+      The project does not really have an objective. It is up to the user what they want to create and add to the VR scene. In this experience, there are 3 modes (place, edit, and explore) and 3 shapes to choose from (box, sphere, and taurus knot). When the experience starts, the user is placed in the middle of a room, and the mode is initially set to place while the default shape is a box. At any time, regardless of which mode or shape is selected, the user can change modes and shape to create. To do so, the user has to click on any of the boxes in each corner of the room. The 3 big boxes allow the user to change modes: green is to create and place objects, yellow is to edit an object, and red is to explore the scene. The smaller boxes attached to the green one are to change the shape that will be instantiated next. In place mode, the user can do a screen tap gesture over the Leap controller, which then instantiates a 3D shape in front of them and then moves them forward for 5 seconds. In these 5 seconds, the user can move wherever they want. After time is up, the object gets placed into the world, and the user can then create a new shape, or they can change their shape or mode. If they change to edit mode, the the user can scale and rotate shapes in their scene. To do this they need to click on a shape in the scene (it will then turn green to show it is selected) and then make a swipe gesture (to rotate) or use the index fingers of both hands and move them closer or further away from each other (to scale). To deselect a shape, just click on it again. Only selected shapes can be scaled and rotated. However, if a shape is scaled or rotated, it will stay scaled or rotated even if is deselected, the scaling and rotation just can’t be changed again until the user selects the shape again. Finally, the user can go into explore mode. This moves the user throughout the scene in whichever way they look and allows them to examine the scene they have just created.
+      <br>
+      Our first struggles were to come up with a good idea. We first wanted to do a 3D data visualization but found that idea too challenging. Once we switched to our final idea, the hardest part was figuring out all the different states and how to keep track of the state of all the shapes in the scene. We were able to figure this out through the use of classes and multiple other methods. Another challenge was using the Leap. We needed to come up with both built in gestures and our own gestures in order to manipulate objects in our scene. The hardest part of this is that the Leap was not always the most accurate, especially when it came down to screen taps. However, by splitting our game into three modes we were able to navigate most of these problems.
+      <br>
+      To improve this experience more it would have been fun to allow the user to also pick the colors that they want their shapes to be. This way there could be an even greater feeling of customizability. Also, it would have been nice if we could have improved upon the Leap gestures we used (maybe make more custom ones) in order to make controlling the scene a little easier and more accurate. Lastly, including 3D from Google Poly, or making our own, would have added more to the project.</p>
+      <div id="images">
+        <h3>Media</h3>
+        <video src="images/leapvr.mp4" controls></video>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 4</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <div id="nav">
+      <h1 id="title">Girl Scout Cookie Store</h1>
+      <div id="tabs">
+        <div class="active tab"><a href="#" id="tab1" data-content="store">Store</a></div>
+        <div class="tab"><a href="#" id="tab2" data-content="cart">Shopping Cart<p style="display:inline;"></p></a></div>
+      </div>
+    </div>
+
+    <div id="content">
+      <div id="store" class="content">
+
+        <form>
+          <div class="item">
+            <img src="images/thinmint3.png" alt="Thin Mints">
+            <div class="description">
+              <h1>Thin Mints</h1>
+              <p>Crisp wafers covered in chocolaty coating. Made with natural oil of peppermint. Thin Mints are one a kind! At a low price of $5, these are some of the best cookies we offer. Classic cookies. Support our Girl Scouts, and buy yours today before we run out!</p>
+            </div>
+            <div class="addToCart" style="clear:both;">
+              <select id="thinmint" name="thinmint">
+                <option value="0" selected>Select a quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <button type="button" id="thinmintbutton">Add to Cart</button>
+            <p class="added"></p>
+            </div>
+          </div>
+
+          <div class="item">
+            <img src="images/tagalong2.png" alt="Tagalongs">
+            <div class="description">
+              <h1>Tagalongs</h1>
+              <p>Peanut butter patties. Crispy cookies layered with peanut butter and covered with a chocolaty coating. Tagalongs are one a kind! At a low price of $4, these are some of the best cookies we offer. Classic cookies. Support our Girl Scouts, and buy yours today before we run out!</p>
+            </div>
+            <div class="addToCart" style="clear:both;">
+              <select id="tagalong" name="tagalong">
+                <option value="0" selected>Select a quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <button type="button" id="tagalongbutton">Add to Cart</button>
+            <p class="added"></p>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <img src="images/samoa2.png" alt="Samoas">
+            <div class="description">
+              <h1>Samoas</h1>
+              <p>Chewy and rich! Crisp cookies, coated in caramel, sprinkled with toasted coconut, and striped with a dark chocolaty coating. Samoas are one a kind! At a low price of $3, these are some of the best cookies we offer. Classic cookies. Support our Girl Scouts, and buy yours today before we run out!</p>
+            </div>
+
+            <div class="addToCart" style="clear:both;">
+              <select id="samoa" name="samoa">
+                <option value="0" selected>Select a quantity</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+              <button type="button" id="tagalongbutton">Add to Cart</button>
+              <p class="added"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div id="cart" class="content hidden">
+        <div style="float:left;">Total cost: $</div>
+        <div id="total" style="float:left;">0</div>
+        <div id="summary" style="clear:both;">
+          There are currently no items in your cart
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+        GIRL SCOUTS OF AMERICA 2018 &copy
+    </div>
+
+    <script type="text/javascript" src="scripts/script.js"></script>
+  </body>
+</html>

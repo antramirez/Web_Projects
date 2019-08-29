@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Documentation</title>
+  <style>
+
+    body {
+      margin:0;
+      background-color: rgba(0,0,255,.15);
+      font-family: sans-serif;
+    }
+    #content {
+      background-color: rgba(255, 255, 255, .25);
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 40px;
+    }
+    .media {
+      margin: auto;
+      max-width: 800px;
+    }
+    .images {
+      max-width: 800px;
+    }
+    img {
+      width: 350px;
+      margin-left: 32px;
+    }
+    video {
+      display: block;
+      width: 700px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+  <div id="content">
+    <h1>A&D Mini Games by Anthony Ramirez & David Krauskopf-Greene</h1>
+    <p>
+      For our project, we wanted to make a couple of mini games. We both like sports so we decided to go down this route. Our games originally were going to be basketball, soccer, and mini golf, but we decided that it would both be easier and more fun to make just a balloons and mini golf game. Each game consists of multiple difficulties/levels, with each having three variations. For the balloons game we have an easy, medium, and hard mode. For the mini golf game there are three holes that progressively get harder.<br>
+      In Balloons, there are a certain number of balloons in the middle of the screen. There are more or fewer based on the level of difficulty. The player has three rocks to throw. The rock is positioned in the lower left-hand corner and can be fired in the direction the moving arrow is pointing by pressing the spacebar. The goal of the game is to pop as many balloons as you can, seeing if you can top your previous scores. Every time a new game starts, random balloon colors are selected. Also the clouds in the background are positioned at random locations and then move across the screen at random speeds. When the game is over, the player is given the opportunity to play again and select a different difficulty level if they so choose or play golf.<br>
+      If a new level is chosen, the array of balloons is set to empty and then repopulated with new balloons.
+      The biggest challenge we faced when implementing this game was the physics of shooting the rock. We wanted to have a realistic arc to the shots and also have the ability to vary the angle of the shot. We ended up giving the player five paths to shoot from. Basically the player follows the moving arrow and presses the spacebar when they want to shoot from that angle. Whatever of the five angles is closest to when the play presses the spacebar is the angle that is used to fire the rock. Based on the angle, one of five velocities and gravities is applied to the rock.
+      In Mini Golf, the player has to navigate their way through three holes. The first one is the simplest, and the following levels get harder and harder. There are obstacles the player has to avoid, and if the ball gets stuck in a puddle then the user is sent back to the starting position. In order to make the hole, the player has to get the golf ball close to the hole and can’t have the ball be rolling too fast. To change the speed of the shot the player has to move their mouse closer or further away from the ball. At the end of the three holes the player is told their score and asked if they want to play again.<br>
+      On the surface this game seemed like it should be pretty simple, but this was not the case. In order to make the holes we used a tile-based system for the different parts if the course. Once we had this feature. we had to figure out how to shoot the ball and how to detect when it went in the hole. The math of this was a little tricky as we had to keep track of both the x and y speeds of the ball while decreasing it at a reasonable rate to seem like a realistic shot. Once we figured this out, we had to detect obstacles. This might have been the most challenging part as all the holes are different in their respective setup. Once this was done, the main functionality was finished so we added in some sounds to give a more realistic experience.<br>
+      Finally, in order to choose what game to play we created a start screen. To pick the game we used a speech recognition library so the player has to say either “Balloons” or “Golf” to start a game. An animated character then walks to the icon of the game the player said, and then the game starts once the character is in the middle of the icon. When either game ends, the player has the ability to play that game again or pick the other game to play. We thought this would be a nice feature so the player wouldn’t have to refresh the screen every time they wanted to play a different game. In order to do this, each game game variable had to be reset, which ended up being tricky. Overall, it was quite a challenge to implement these games as they have a lot of underlying physics to them. The visuals and sounds were probably the most fun as they really bring the game to life and make it feel more like a realistic experience.
+    </p>
+
+    <div class="media">
+      <div class="images">
+        <img src="images/documentationMedia/startScreen.png">
+        <img src="images/documentationMedia/balloonMode.png">
+        <img src="images/documentationMedia/balloonGame.png">
+        <img src="images/documentationMedia/balloonEnd.png">
+        <img src="images/documentationMedia/holeDescription.png">
+        <img src="images/documentationMedia/golfHole.png">
+        <img src="images/documentationMedia/golfHole2.png">
+        <img src="images/documentationMedia/golfEnd.png">
+      </div>
+      <video src="images/documentationMedia/ADMiniGames.mp4" controls></video>
+    </div>
+
+  </div>
+  <footer></footer>
+
+</body>
+</html>

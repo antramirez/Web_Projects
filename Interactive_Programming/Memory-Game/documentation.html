@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style >
+      body {
+        background-color: rgba(0,0,255,.15);
+        font-family: sans-serif;
+      }
+      #container {
+        margin: 50px auto;
+        max-width: 850px;
+        padding: 20px 50px;
+        background-color: white;
+      }
+      img, video {
+        display: block;
+        width: 450px;
+        margin: 10px auto;
+      }
+      #images {
+        justify-content: content;
+        margin: auto;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <h1>Food Memory: Leap Motion Documentation</h1>
+      <p>This project was inspired by a childhood game. I've already made games where the user has to collect coins and avoid enemies, and I have been fascinated by what is possible with the Leap Motion sensor, so I thought it would be fun to make a classic memory game where the user gets to use physical click motions. At first, I made the game using mouse clicks, which made it easy to convert the code to work with the Leap. The most challenging part was keeping track of how many tiles could be revealed at a time and for how long to display the images, so I had to use setTimeout a couple times. Additionally, I love food and minimalistic graphics, so I decided to use those as my tile images.</p>
+
+      <div id="images">
+        <h3>Media</h3>
+        <img src="img/doc_game.jpg">
+        <img src="img/doc_mine.png">
+        <img src="img/doc_mine2.png">
+        <video controls src="img/doc_vid.mp4"></video>
+      </div>
+    </div>
+  </body>
+</html>

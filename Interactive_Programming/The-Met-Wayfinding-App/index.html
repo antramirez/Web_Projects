@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Met WayFinding App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- P5 libraries -->
+  <script language="javascript" type="text/javascript" src="../libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="../libraries/p5.dom.min.js"></script>
+  <!-- P5 sketch -->
+  <script type="text/javascript" src="sketch.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="container">
+    <img id="logo" style="" src="../img/metlogo.png" alt="The Met">
+
+      <div id="launch">
+        <h1>The Met Wayfinder</h1>
+        <p id="app-description">This app will make your visit easier by mapping a direct route through the museum. Select the exhibitions you want to see from the drop down menu on the next page by tapping on an exhibition name and tapping “Add to route.” Once you have selected your exhibitions, tap “Make My Route!” We will show you the most direct path to the exhibitions you have chosen, and you will be able to modify the route to fit your needs.</p>
+        <div id="getStartedButton">Get Started!</div>
+      </div>
+      <div id='selectDestinations'>
+        <h2>Select Destinations</h2>
+        <div id="destinations">
+          <!-- <h3>Select a Path</h3> -->
+          <div class="destination-container">
+            <div class="destination-name">Modern and Contemporary Art</div>
+            <div class="destination-description">
+              The Met holds over 12,000 modern and contemporary artworks spanning 1900 to the present. Artists exhibited include Georges Braque, Henri Matisse, Joan Miro, and Pablo Picasso.
+            </div>
+            <div class="add-button add-button-dest">Add to route</div>
+            <div class="remove-button remove-button-dest">Remove from route</div>
+          </div>
+          <div class="destination-container">
+            <div class="destination-name">Arts of Africa, Oceania, and the Americas</div>
+            <div class="destination-description">
+              These galleries include works from sub-Saharan Africa, the Pacific Islands, and South America from 3000 BCE to the present. This collection includes decorative and ceremonial objects, sculpture, religious images, gold objects, and ceramics.
+            </div>
+            <div class="add-button add-button-dest">Add to route</div>
+            <div class="remove-button remove-button-dest">Remove from route</div>
+          </div>
+
+          <div class="destination-container">
+
+            <div class="destination-name">Greek and Roman Art</div>
+            <div class="destination-description">
+              This collection includes works from the Neolithic period to AD 312. Geographically, works from Greece, Italy, Asia Minor, and the Mediterranean basin are included.
+            </div>
+            <div class="add-button add-button-dest">Add to route</div>
+            <div class="remove-button remove-button-dest">Remove from route</div>
+          </div>
+
+          <div class="destination-container">
+
+            <div class="destination-name">Robert Lehman Collection</div>
+            <div class="destination-description">
+              Robert Lehman’s bequest to the Met includes 700 years of western European art from the 14th to the 20th centuries. Paintings, drawings, manuscripts, sculpture, glass, textiles, antiques, and jeweled objects are on view.
+            </div>
+            <div class="add-button add-button-dest">Add to route</div>
+            <div class="remove-button remove-button-dest">Remove from route</div>
+          </div>
+
+          <div class="destination-container">
+
+            <div class="destination-name">Medieval Art</div>
+            <div class="destination-description">
+              This collection encompasses the art of the Mediterranean and Europe from the fall of Rome to the beginning of the Renaissance. Works from the Bronze Age and Iron Age are also included.
+            </div>
+            <div class="add-button add-button-dest">Add to route</div>
+            <div class="remove-button remove-button-dest">Remove from route</div>
+          </div>
+          <div class="destination-container">
+
+            <div class="destination-name">European Sculpture and Decorative Arts</div>
+            <div class="destination-description">
+              This collection includes works from Western Europe from the 15th century to the early 20th century. Sculpture, woodwork, ceramics, metalwork, mathematical instruments, and textiles are included.
+            </div>
+            <div class="add-button add-button-dest">Add to route</div>
+            <div class="remove-button remove-button-dest">Remove from route</div>
+          </div>
+          <div class="destination-container">
+
+            <div class="destination-name">The American Wing</div>
+            <div class="destination-description">
+              These galleries include period rooms, the facade of the Branch Bank of the United States, and marble and bronze sculptures.
+            </div>
+            <div class="add-button add-button-dest">Add to route</div>
+            <div class="remove-button remove-button-dest">Remove from route</div>
+          </div>
+          <div class="destination-container">
+
+            <div class="destination-name">Arms and Armor</div>
+            <div class="destination-description">
+              Armor and weapons showcase the artistic and technical capabilities of societies and display art history and material culture in a unique way.
+            </div>
+            <div class="add-button add-button-dest">Add to route</div>
+            <div class="remove-button remove-button-dest">Remove from route</div>
+          </div>
+          <div class="destination-container">
+
+            <div class="destination-name">Egyptian Art</div>
+            <div class="destination-description">
+              The Met’s collection is comprised of 26,000 objects from ancient Egypt from the Paleolithic to Roman period.
+            </div>
+            <div class="add-button add-button-dest">Add to route</div>
+            <div class="remove-button remove-button-dest">Remove from route</div>
+          </div>
+        </div>
+
+        <div class="button" id="makeRoute">Make My Route!</div>
+      </div>
+      <div id="routeOverview">
+        <div id="overview-top">
+          <h2>Route Overview</h2>
+          <div id="mapContainer">
+          </div>
+
+          <div class="button" id="makeRoute2">Walk the Route</div>
+          <div class="button" id="modifyRouteButton">Additional Route Features</div>
+          <div class="button" id="differentDestinations">Start Over</div>
+        </div>
+
+        <div id="path">
+          <h2>Path</h2>
+        </div>
+
+      </div>
+      <div id="modifyRoute">
+        <h2>Additional Route Features</h2>
+        <div id="modifications">
+
+          <div class="feature-container">
+
+              <div class="feature-name">Wheelchair Accessible</div>
+              <div class="feature-description">
+              </div>
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+
+          <div class="feature-container">
+
+            <div class="feature-name">Light Sensitivity</div>
+            <div class="feature-description">
+            </div>
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+
+          <div class="feature-container">
+
+            <div class="feature-name">Restrooms</div>
+
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+
+          <div class="feature-container">
+            <div class="feature-name">Family Friendly</div>
+
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+
+          <div class="feature-container">
+            <div class="feature-name">Resting Places</div>
+
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+          <div class="feature-container">
+            <div class="feature-name">Cafes</div>
+
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+          <div class="feature-container">
+            <div class="feature-name">Exits</div>
+
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+          <div class="feature-container">
+            <div class="feature-name">Coat Check</div>
+
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+          <div class="feature-container">
+            <div class="feature-name">Information Desks</div>
+
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+          <div class="feature-container">
+            <div class="feature-name">Assistive Audio</div>
+
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+          <div class="feature-container">
+            <div class="feature-name">Cognitive Disabilities</div>
+
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+          <div class="feature-container">
+            <div class="feature-name">No Sight</div>
+
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+          <div class="feature-container">
+            <div class="feature-name">Low or Tunnel Vision</div>
+
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+          <div class="feature-container">
+            <div class="feature-name">Slow Senisory Processing</div>
+
+            <div class="add-button add-button-ft">Add to route</div>
+            <div class="remove-button remove-button-ft">Remove from route</div>
+          </div>
+        </div>
+        <div class="button" id="modifyRouteButton2">Modify Route</div>
+        <p style="padding: 10px 20px; font-family: sans-serif;">Please note the only current features are Wheelchair accessible elevators, cafes, restrooms, assistive audio devices, and exits.</p>
+        </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

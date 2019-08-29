@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A&D Mini Games</title>
+    <script src="p5/p5.js" type="text/javascript"></script>
+    <script src="p5/addons/p5.sound.min.js"></script>
+    <script src="p5/addons/p5.speech.js" type="text/javascript"></script>
+
+    <script src="sketch.js" type="text/javascript"></script>
+
+    <!-- custom CSS -->
+    <style>
+      #game {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+      #instructions {
+        max-width: 800px;
+        padding: 50px;
+        margin: auto;
+      }
+      footer {
+        position:absolute;
+        bottom:10px;
+        left: 18px;
+      }
+      h4 {
+        color: white;
+        font-family: sans-serif;
+        margin: 5px;
+      }
+      p {
+        color:rgba(255,255,255,.4);
+        font-family: sans-serif;
+        padding:5px;
+      }
+      a {
+        font-family: sans-serif;
+        font-size: 13px;
+        text-decoration: none;
+        color:rgba(255,255,255,.4);
+        -webkit-transition: color 1s;
+        transition: color 1s;
+      }
+      a:hover {
+        color: rgba(150,150,255,.9);
+      }
+    </style>
+    <style>
+    </style>
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="instructions">
+      <h4>How to Play</h4>
+      <p>Intro: Say 'Balloons' or 'Golf' to begin a game.<br><br>
+        Balloons: Select easy, medium, or hard by pressing 'e', 'm', or 'h', respectively. You have 3 chances to shoot at as many balloons as you can. Press SPACE to shoot. At the end of the game, you have the option to play again, or you can play Golf by pressing 'g'.<br><br>
+        Golf: Click to start a course. Next, click on the dark green grass patch to place your ball to begin. Then, move your mouse and click on the position you want the golf ball to move towards. Try to make the hole in as few shots as possible. At the end of 3 holes, you can play again, or you can play Balloons.
+      <p>
+    </div>
+    <footer><a href="documentation.html">Documentation</a><br></footer>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+body {
+  font-family: sans-serif;
+  margin:0;
+}
+
+#nav {
+  text-align: center;
+  background-image: url('../images/cookies.jpg');
+}
+#title {
+  color:white;
+  padding-top:30px;
+  padding-bottom:15px;
+  font-size: 3em;
+}
+#tabs {
+  text-align: center;
+  margin-bottom:3%;
+  height:65px;
+}
+.tab {
+  padding-top:4px;
+  margin:5px;
+  width:200px;
+  height:36px;
+  border: 2px white solid;
+  border-radius:10px;
+  display:inline-block;
+  transition: border 1s, border-radius 1s;
+}
+.tab a {
+  display:block;
+  text-decoration: none;
+  color:white;
+  font-size:1.3em;
+  padding-bottom:8px;
+  padding-top: 4px;
+  transition: color 1s;
+}
+.tab:hover {
+  border: 2px rgb(152,200,255) solid;
+  border-radius: 0px;
+
+}
+.tab a:hover {
+  color: rgb(152,200,255);
+}
+.active {
+  background-color: rgb(152,200,255);
+
+}
+.active:hover {
+  border: 2px white solid;
+  color:white;
+  border-radius: 10px;
+}
+.active a:hover {
+  color:white;
+}
+#content {
+  width: 700px;
+  height: 800px;
+  margin:auto;
+}
+.hidden {
+  display:none;
+}
+img {
+float:left;
+}
+h1 {
+  margin:0;
+}
+div.description {
+  display: inline-block;
+  float:left;
+  width:60%;
+  margin-left:2%;
+}
+.item {
+  margin-bottom:3%;
+}
+
+#footer {
+  margin:auto;
+  text-align: center;
+  padding-top:30px;
+  padding-bottom:22px;
+  width:100%;
+  background-image: url('../images/cookies.jpg');
+  height:25px;
+  position:fixed;
+  bottom:0px;
+  color:white;
+}
